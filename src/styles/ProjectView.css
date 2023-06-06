@@ -1,0 +1,52 @@
+.Project {
+    width: 800px;
+    height: 650px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.Project img {
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.Project h1 {
+    color: white;
+}
+
+.Project p {
+    color: white;
+}
+
+.Project a {
+    color: white;
+}
+
+@media only screen and (max-width: 812px){
+    .Project {
+    width: 300px;
+    height: 650px;
+    margin: 0 auto;
+    justify-content: center;
+    }
+
+    .Project img {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 311px){
+    .Project {
+    width: 250px;
+    height: 650px;
+    margin: 0 auto;
+    justify-content: center;
+    }
+
+    .Project img {
+        width: 200px;
+        height: 175px;
+    }
+}

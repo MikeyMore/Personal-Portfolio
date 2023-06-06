@@ -1,0 +1,15 @@
+body {
+    /* background: lightgray; */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vertical-timeline-element-date {
+    text-align: left;
+    color: white;
+}
+
+@media only screen and (max-width: 1169px){
+    .vertical-timeline-element-date {
+        color: black;
+    }
+}
