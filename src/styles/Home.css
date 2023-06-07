@@ -1,3 +1,16 @@
+
+@keyframes shadow-beat {
+  0%{
+    text-shadow: 0px 3px 15px rgba(255, 255, 255, 0);
+  }
+  50%{
+    text-shadow: 0px 3px 15px rgb(176, 66, 209);
+  }
+  100%{
+    text-shadow: 0px 3px 15px rgba(255, 255, 255, 0);
+  }
+}
+
 .home {
     width: 100%;
     align-items: center;
@@ -12,23 +25,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    /* background-color: #21325e; */
+    text-align: justify;
     background: transparent;
     color: #f0f0f0;
   }
   
   .about h2 {
-    
+    animation: shadow-beat 2s infinite;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 80px;
+    text-align: center !important;
     color: #e9d35b;
     height: 50px;
+    
   }
   
+  .skils .programmer {
+    height: '300px';
+    width:'400px';
+    margin: 'auto';
+    display: 'flex';
+    justify-content: 'center';
+  }
+
   .about .prompt {
     margin: 1px 1px 1px 1px;
-    width: 40%;
+    width: 80%;
     font-size: 30px;
   }
   .prompt svg {
@@ -52,6 +74,7 @@
   }
   
   .skills .list {
+
     list-style: none;
     width: 60%;
     text-align: left;
@@ -59,9 +82,31 @@
   }
   
   .list span {
+    text-shadow: 0px 3px 15px rgb(0, 0, 0);
     font-size: 20px;
   }
+
+  .coffeePlz {
+    color: white;
+    text-emphasis: bold;
+  }
+
+  .coffee {
+    background: url('../assets/buymeacoffee.jpg');
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 150px;
+    width: 540px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+
   
+  .coffee:hover {
+    box-shadow: 0px 3px 15px rgba(176, 66, 209, 0.747);
+  }
+
   @media only screen and (max-width: 600px) {
     .about h2 {
       font-size: 40px;
@@ -82,5 +127,16 @@
   
     .skills h2 {
       font-size: 30px;
+    }
+    
+    .coffee {
+      background: url('../assets/buymeacoffeeLogo.jpg');
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      height: 120px;
+      width: 120px;
+      border-radius: 20px;
+
     }
   }

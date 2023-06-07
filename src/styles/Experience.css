@@ -8,6 +8,8 @@ body {
     color: white;
 }
 
+
+
 @media only screen and (max-width: 1169px){
     .vertical-timeline-element-date {
         color: black;
